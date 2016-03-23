@@ -1,0 +1,6 @@
+﻿  Листинг 1.3.cpp
+c:\users\liven.md\documents\с++\семинар 1\задача 1.2\листинг 1.3.cpp(11): warning C4244: =: преобразование "long" в "short", возможна потеря данных
+c:\users\liven.md\documents\с++\семинар 1\задача 1.2\листинг 1.3.cpp(12): warning C4244: =: преобразование "long" в "short", возможна потеря данных
+c:\users\liven.md\documents\с++\семинар 1\задача 1.2\листинг 1.3.cpp(13): warning C4244: =: преобразование "long" в "short", возможна потеря данных
+  Задача 1.2.vcxproj -> c:\users\liven.md\documents\С++\Семинар 1\x64\Debug\Задача 1.2.exe
+  Задача 1.2.vcxproj -> c:\users\liven.md\documents\С++\Семинар 1\x64\Debug\Задача 1.2.pdb (Partial PDB)
