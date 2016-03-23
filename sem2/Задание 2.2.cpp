@@ -33,9 +33,9 @@ int main() {
 	printf("|    X   |  Done  |    S    |  Count Iter |\n");
 	printf("-------------------------------------------\n");
 
-	fout << "-------------------------------------------\n";
-	fout << "|    X   |  Done  |    S    |  Count Iter |\n";
-	fout << "-------------------------------------------\n";
+	fout << "------------------------------------------------\n";
+	fout << "|      X      |  Done  |    S    |  Count Iter |\n";
+	fout << "------------------------------------------------\n";
 
 	for (double x = xb; x <= xe; x += xd) {
 		bool done = true; // признак достижения точности
@@ -48,7 +48,7 @@ int main() {
 				done = false; break;
 			}
 		}
-		printf("|%8.3lf |%6s |%9.2lf |%13d |\n", x, (done)?"true":"false", s, i);
+		printf("| %8.5lf |%6s| %9.2lf |%13d|\n", x, (done)?"true":"false", s, i);
 		string dn = (done)?"true ":"false";
 		string sn = (s>0)?s:(" " + s)
 		fout << "|" << x << "|" << dn << "|" << sn << "|" << i << "|" << "\n";
