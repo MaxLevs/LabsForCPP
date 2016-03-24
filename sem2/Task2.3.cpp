@@ -5,20 +5,20 @@
 using namespace std;
 
 int main() {
-	initscr();
 	printf("\nНажмите одну из курсорных клавиш:\n");
-	cout << KEY_UP << "\n";
-	int key;
-	timeout(-1);
-	key = getch();
+	system("sleep 1s");
+	initscr();
+	keypad(stdscr, true);	//Включаем режим чтения функциональных клавиш
+	noecho();				//Выключаем отображение вводимых символов, нужно для getch()
+	halfdelay(100);			//Устанавливаем ограничение по времени ожидания getch() в 10 сек
+	int key = getch();
 	endwin();
 	switch ( key ) {
 		case KEY_UP: printf("Стрелка вверх\n"); break;
-		case 97: printf("A\n"); break;
-		case 115: printf("S\n"); break;
-		case 100: printf("D\n"); break;
-		case 27: printf("А ведь я ничего не говорил про стрелки)\n"); break;
-	default: printf("Это что-то не то!\n");
+		case KEY_LEFT: printf("Стрелка влево\n"); break;
+		case KEY_RIGHT: printf("Стрелка вправо\n"); break;
+		case KEY_DOWN: printf("Стрелка вниз\n"); break;
+		default: printf("Это что-то не то!\n");
 	}
 	return 0;
 }
