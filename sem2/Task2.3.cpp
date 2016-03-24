@@ -1,11 +1,24 @@
+#include <cstdio>
+#include <curses.h> //cd /usr/include/c++/4.8.4
 #include <iostream>
-#include <clocale>
+
 using namespace std;
+
 int main() {
-	setlocale(LC_ALL, "Russian");
-	double x, y, R;
-	cout << "Введите коорднаты точки (скачала X, а потом Y) и радиус окружности области:\n";
-	cin >> x >> y >> R;
-	if (x*x + y*y <= R*R && (((y >= (x - 1)*(x - 1)) && (x >= 0)) || ((x < 0) && (y <= 0)))) cout << "Попадение!\n"; else cout << "Промах!\n";
-	system("Pause");
-};
+	initscr();
+	printf("\nНажмите одну из курсорных клавиш:\n");
+	cout << KEY_UP << "\n";
+	int key;
+	timeout(-1);
+	key = getch();
+	endwin();
+	switch ( key ) {
+		case KEY_UP: printf("Стрелка вверх\n"); break;
+		case 97: printf("A\n"); break;
+		case 115: printf("S\n"); break;
+		case 100: printf("D\n"); break;
+		case 27: printf("А ведь я ничего не говорил про стрелки)\n"); break;
+	default: printf("Это что-то не то!\n");
+	}
+	return 0;
+}
