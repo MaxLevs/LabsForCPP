@@ -50,8 +50,7 @@ int main() {
 		}
 		printf("| %8.5lf |%6s| %9.2lf |%13d|\n", x, (done)?"true":"false", s, i);
 		string dn = (done)?"true ":"false";
-		string sn = (s>0)?s:(" " + s)
-		fout << "|" << x << "|" << dn << "|" << sn << "|" << i << "|" << "\n";
+		fout << "|" << x << "|" << dn << "|" << s << "|" << i << "|" << "\n";
 	}
 
 }
