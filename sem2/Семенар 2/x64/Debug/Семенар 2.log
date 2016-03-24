@@ -1,5 +1,0 @@
-﻿  Задание 2.2.cpp
-c:\users\liven.md\documents\с++\семенар 2\семенар 2\задание 2.2.cpp(20): warning C4552: >: оператор не имеет результата; требуется оператор с побочным действием
-c:\users\liven.md\documents\с++\семенар 2\семенар 2\задание 2.2.cpp(8): warning C4101: x: неиспользованная локальная переменная
-  Семенар 2.vcxproj -> c:\users\liven.md\documents\С++\Семенар 2\x64\Debug\Семенар 2.exe
-  Семенар 2.vcxproj -> c:\users\liven.md\documents\С++\Семенар 2\x64\Debug\Семенар 2.pdb (Partial PDB)
