@@ -33,4 +33,6 @@ int main() {
 	cout << "Минимальный  эллемент " << a[imin] << " с индексом " << imin << endl;
 	for(int i = min(imin, imax)+1; i < max(imin, imax); i++) if(a[i]>0) count++;
 	cout << endl << "Кол-во положительных: " << count << endl << endl << endl;
+	
+	return 0;
 }
