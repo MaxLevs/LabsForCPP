@@ -12,10 +12,10 @@ int main() {
 	ifstream fin( "text1.txt" );
 	if ( !fin ) { cout << "Ошибка открытия файла." << endl; return 1; }
 
-	fin.getline( line, len )
+	fin.getline( line, len );
 	
 	while ( fin.getline( line, len ) ) {
-		cout << line << endl
+		cout << line << endl;
 		if ( strstr( line, word ) ) { cout << "Присутствует!" << endl; return 0; }
 	}
 
